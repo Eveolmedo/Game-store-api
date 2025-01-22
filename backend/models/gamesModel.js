@@ -7,6 +7,13 @@ export const getGames = () => {
     return JSON.parse(data);
 }
 
-export const getGameById = () => {
-    return getGames().find((game) => game.id === id)
+export const getGameById = (id) => {
+    const data = getGames()
+    return data.find((game) => game.id === id)
+}
+
+export const addGame = (newGame) => {
+    const data = getGames()
+    const newId = (data.length + 1).toString()
+    const game = { ...newGame, id: newId}
 }

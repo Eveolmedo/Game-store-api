@@ -15,3 +15,7 @@ export const getGameById = (req, res) => {
     res.json(game)
 }
 
+export const createGame = (req, res) => {
+    const newGame = gamesModel.addGame(req.body)
+    res.status(201).json(newGame)
+}
