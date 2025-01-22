@@ -1,7 +1,17 @@
 const gamesModel = require("../models/gamesModel")
 
-export const getGames = (req, res) => {
-    const games = gamesModel.getAllGames() // Obtener todos los juegos
+export const getAllGames = (req, res) => {
+    const games = gamesModel.getGames() // Obtener todos los juegos
     res.json(games)
+}
+
+export const getGameById = (req, res) => {
+    const {id} = req.params // Obtiene el id deseado
+    const game = gamesModel.getGameById(id)
+    if (!game) {
+        res.status(404).json({error: 'Juego no encontrado'})
+        return
+    }
+    res.json(game)
 }
 
