@@ -19,3 +19,14 @@ export const createGame = (req, res) => {
     const newGame = gamesModel.addGame(req.body)
     res.status(201).json(newGame)
 }
+
+export const updateGame = (req, res) => {
+    const {id} = req.params
+    const updateGame = gamesModel.updateGame(id, req.body)
+    if (!updateGame) {
+        res.status(404).json({error: 'Juego no encontrado'})
+        return
+    }
+    res.json(updateGame)
+}
+
