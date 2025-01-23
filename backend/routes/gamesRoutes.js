@@ -1,5 +1,5 @@
 const express = require('express');
-import { getAllGames, getGameById, createGame, updateGame, deleteGame } from '../controllers/gamesController';
+const { getAllGames, getGameById, createGame, updateGame, deleteGame } = require('../controllers/gamesController')
 
 const router = express.Router()
 
@@ -9,4 +9,4 @@ router.post('/', createGame)
 router.put('/:id', updateGame)
 router.delete('/:id', deleteGame)
 
-export default router
+module.exports = router

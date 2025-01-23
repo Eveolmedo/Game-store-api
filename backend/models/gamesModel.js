@@ -1,18 +1,19 @@
 const fs = require('fs')
 const path = require('path')
-const filePath = path.join(__dirname, '../data/gamesData.json')
 
-export const getGames = () => {
+const filePath = path.join(__dirname, '../data/gamesData.json');
+
+const getGames = () => {
     const data = fs.readFileSync(filePath, 'utf8');
     return JSON.parse(data);
 }
 
-export const getGameById = (id) => {
+const getGameById = (id) => {
     const data = getGames()
-    return data.find((game) => game.id === id)
+    return data.games.find((game) => game.id === id)
 }
 
-export const addGame = (newGame) => {
+const addGame = (newGame) => {
     const data = getGames()
     const newId = (data.length + 1).toString()
     const game = { ...newGame, id: newId}
@@ -22,20 +23,22 @@ export const addGame = (newGame) => {
     return game
 }
 
-export const updateGame = (id, updateGame) => {
+const updateGame = (id, updateGame) => {
     const data = getGames()
-    const index = data.findIndex((game) => game.id === id)
+    const index = data.games.findIndex((game) => game.id === id)
     if (index === -1) return null
     data[index] = {...data[index], ...updateGame}
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2))
     return data[index]
 }
 
-export const deleteGame = (id) => {
+const deleteGame = (id) => {
     const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
-    const index = data.findIndex((game) => game.id === id)
+    const index = data.games.findIndex((game) => game.id === id)
     if (index === -1) return false
     data.splice(index, 1)
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2))
     return true
 }
+
+module.exports = { getGames, getGameById, addGame, updateGame, deleteGame } 
