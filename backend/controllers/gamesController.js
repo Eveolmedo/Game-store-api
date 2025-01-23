@@ -30,3 +30,12 @@ export const updateGame = (req, res) => {
     res.json(updateGame)
 }
 
+export const deleteGame = (req,res) => {
+    const {id} = req.params
+    const isDeleted = gamesModel.deleteGame(id)
+    if (!isDeleted) {
+        res.status(404).json({error: "Frase no encontrada"})
+        return
+    }
+    res.status(204).send()
+}

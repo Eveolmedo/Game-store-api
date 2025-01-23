@@ -30,3 +30,12 @@ export const updateGame = (id, updateGame) => {
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2))
     return data[index]
 }
+
+export const deleteGame = (id) => {
+    const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+    const index = data.findIndex((game) => game.id === id)
+    if (index === -1) return false
+    data.splice(index, 1)
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2))
+    return true
+}
