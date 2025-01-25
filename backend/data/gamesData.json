@@ -1,41 +1,34 @@
-{
-  "info": {
-    "name": "Games Database",
-    "version": "1.0.0",
-    "total": 4
+[
+  {
+    "id": "1",
+    "titulo": "Final Fantasy X",
+    "categoria": "RPG",
+    "precio": 29.99,
+    "stock": 10,
+    "descripcion": "Un RPG clásico de Square Enix para PlayStation 2."
   },
-  "games": [
-    {
-      "id": "1",
-      "titulo": "Final Fantasy X",
-      "categoria": "RPG",
-      "precio": 29.99,
-      "stock": 10,
-      "descripcion": "Un RPG clásico de Square Enix para PlayStation 2."
-    },
-    {
-      "id": "2",
-      "titulo": "God of War",
-      "categoria": "Acción",
-      "precio": 19.99,
-      "stock": 5,
-      "descripcion": "La historia de Kratos en su búsqueda de venganza."
-    },
-    {
-      "titulo": "God of War",
-      "categoria": "Acción",
-      "precio": 19.99,
-      "stock": 5,
-      "descripcion": "La historia de Kratos en su búsqueda de venganza.",
-      "id": "3"
-    },
-    {
-      "titulo": "God of War",
-      "categoria": "Acción",
-      "precio": 19.99,
-      "stock": 5,
-      "descripcion": "La historia de Kratos en su búsqueda de venganza.",
-      "id": "4"
-    }
-  ]
-}
+  {
+    "id": "2",
+    "titulo": "God of War",
+    "categoria": "Acción",
+    "precio": 30,
+    "stock": 5,
+    "descripcion": "La historia de Kratos en su búsqueda de venganza."
+  },
+  {
+    "titulo": "God of War",
+    "categoria": "Acción",
+    "precio": 19.99,
+    "stock": 5,
+    "descripcion": "La historia de Kratos en su búsqueda de venganza.",
+    "id": "3"
+  },
+  {
+    "titulo": "God of War",
+    "categoria": "Acción",
+    "precio": 19.99,
+    "stock": 5,
+    "descripcion": "La historia de Kratos en su búsqueda de venganza.",
+    "id": "4"
+  }
+]

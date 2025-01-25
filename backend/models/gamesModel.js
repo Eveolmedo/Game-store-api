@@ -26,11 +26,11 @@ const addGame = (newGame) => {
 
 const updateGame = (id, updateGame) => {
     const data = getGames()
-    const index = data.games.findIndex((game) => game.id === id)
+    const index = data.findIndex((game) => game.id === id)
     if (index === -1) return null
-    data.games[index] = {...data.games[index], ...updateGame}
+    data[index] = {...data[index], ...updateGame}
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2))
-    return data.games[index]
+    return data[index]
 }
 
 const deleteGame = (id) => {
@@ -38,6 +38,7 @@ const deleteGame = (id) => {
     const index = data.games.findIndex((game) => game.id === id)
     if (index === -1) return false
     data.games.splice(index, 1)
+    data.info.total -= 1
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2))
     return true
 }
