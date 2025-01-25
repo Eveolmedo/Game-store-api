@@ -4,13 +4,13 @@ const path = require('path')
 const filePath = path.join(__dirname, '../data/gamesData.json');
 
 const getGames = () => {
-    const data = fs.readFileSync(filePath, 'utf8');
-    return JSON.parse(data);
+    const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+    return data.games
 }
 
 const getGameById = (id) => {
     const data = getGames()
-    return data.games.find((game) => game.id === id)
+    return data.find((game) => game.id === id)
 }
 
 const addGame = (newGame) => {

@@ -1,12 +1,12 @@
 {
     "info": {
-    "name": "Games Database",
-    "version": "1.0.0",
-    "total": 2
-  },
+      "name": "Games Database",
+      "version": "1.0.0",
+      "total": 2
+    },
     "games": [
       {
-        "id": 1,
+        "id": "1",
         "titulo": "Final Fantasy X",
         "categoria": "RPG",
         "precio": 29.99,
@@ -14,7 +14,7 @@
         "descripcion": "Un RPG clásico de Square Enix para PlayStation 2."
       },
       {
-        "id": 2,
+        "id": "2",
         "titulo": "God of War",
         "categoria": "Acción",
         "precio": 19.99,
