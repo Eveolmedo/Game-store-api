@@ -25,12 +25,12 @@ const addGame = (newGame) => {
 }
 
 const updateGame = (id, updateGame) => {
-    const data = getGames()
-    const index = data.findIndex((game) => game.id === id)
+    const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+    const index = data.games.findIndex((game) => game.id === id)
     if (index === -1) return null
-    data[index] = {...data[index], ...updateGame}
+    data.games[index] = {...data.games[index], ...updateGame}
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2))
-    return data[index]
+    return data.games[index]
 }
 
 const deleteGame = (id) => {
