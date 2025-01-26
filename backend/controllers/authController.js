@@ -14,10 +14,6 @@ const register = async (req, res) => {
     
     const users = usersModel.getUsers()
 
-    // Verificar si ya existe un administrador
-    const adminExists = users.some((u) => u.role === 'admin');
-    const role = adminExists ? 'user' : 'admin'; // El primer usuario será 'admin', los demás 'user'
-
     const userExists = users.find((user) => user.username === username)
     if (userExists) {
         return res.status(400).json({ error: 'El usuario ya esta registrado' })
@@ -29,8 +25,7 @@ const register = async (req, res) => {
     const newUser = {
         id: Date.now(),
         username,
-        password: hashedPassword,
-        role,
+        password: hashedPassword
     };
 
     usersModel.addUser(newUser);
