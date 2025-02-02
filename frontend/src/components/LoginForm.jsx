@@ -7,7 +7,7 @@ const LoginForm = () => {
 
   const handleRegister = async () => {
     try {
-      const response = await fetch('http://localhost:3000/register', {
+      const response = await fetch('https://game-store-api-d2db.onrender.com/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ const LoginForm = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch('http://localhost:3000/login', {
+      const response = await fetch('https://game-store-api-d2db.onrender.com/login', {
         method: 'POST',
         headers: {'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),

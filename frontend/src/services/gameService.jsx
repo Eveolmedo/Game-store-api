@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/api/games";
+const API_URL = "https://game-store-api-d2db.onrender.com/api/games";
 
 // Obtener el token de autenticacion para las peticiones que lo necesitan
 const token = localStorage.getItem("token");
