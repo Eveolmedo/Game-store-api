@@ -19,7 +19,7 @@ app.use('/api/games', gamesRoutes);
 app.use('/', authRoutes);
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/index.html'));
+    res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
 });
 
 // app.use(errorMiddleware)
