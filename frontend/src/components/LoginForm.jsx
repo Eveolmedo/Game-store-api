@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+const API_URL = import.meta.env.API_URL || "http://localhost:3000"
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');
@@ -7,7 +8,7 @@ const LoginForm = () => {
 
   const handleRegister = async () => {
     try {
-      const response = await fetch('http://localhost:3000/register', {
+      const response = await fetch(`${API_URL}/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -33,7 +34,7 @@ const LoginForm = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch('http://localhost:3000/login', {
+      const response = await fetch(`${API_URL}/login`, {
         method: 'POST',
         headers: {'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),

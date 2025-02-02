@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:3000/api/games";
+const API_URL = import.meta.env.API_URL || "http://localhost:3000"
+
 
 // Obtener el token de autenticacion para las peticiones que lo necesitan
 const token = localStorage.getItem("token");
@@ -6,7 +7,7 @@ const token = localStorage.getItem("token");
 // Obtiene la lista de juegos desde la API.
 export const fetchGames = async () => {
   try {
-    const response = await fetch(API_URL);
+    const response = await fetch(`${API_URL}/api/games`);
     if (!response.ok) throw new Error("Error al obtener los juegos");
     return await response.json();
   } catch (error) {
@@ -19,7 +20,7 @@ export const fetchGames = async () => {
 // Agrega un nuevo juego a la API.
 export const addGame = async (game) => {
     try {
-        const response = await fetch(API_URL, {
+        const response = await fetch(`${API_URL}/api/games`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -38,7 +39,7 @@ export const addGame = async (game) => {
 // Actualiza un juego en la API.
 export const updateGame = async (id, updatedGame) => {
     try {
-        const response = await fetch(`${API_URL}/${id}`, {
+        const response = await fetch(`${API_URL}/api/games/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
@@ -58,7 +59,7 @@ export const updateGame = async (id, updatedGame) => {
 // Elimina un juego de la API.
 export const deleteGame = async (id) => {
   try {
-    const response = await fetch(`${API_URL}/${id}`, {
+    const response = await fetch(`${API_URL}/api/games/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
