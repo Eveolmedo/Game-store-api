@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../assets/PlayStation_2_logo.svg.png"
+import logo from "../assets/PlayStation_2_logo.png"
 
 const Header = () => {
   return (
