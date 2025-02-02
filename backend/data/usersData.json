@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1738202850404,
+    "username": "eve",
+    "password": "$2a$10$iFeVOBQZQUaMyQd8xzUaq.8286nP7rScCKYmXmEIdbqKoWSDua6yi",
+    "role": "admin"
+  },
+  {
+    "id": 1738205447481,
+    "username": "hola",
+    "password": "$2a$10$F8CR37e98VEGXZZaC/Dfr.1TnNHkVvo/Bt5iuaZV9zUxHyc0YkGWa",
+    "role": "user"
+  },
+  {
+    "id": 1738503557941,
+    "username": "chau",
+    "password": "$2a$10$72.xJsbT/uEMhtru8IkIzuQsrsGi0X64StYMjRpRke/qJ44Pzvxqm",
+    "role": "user"
+  }
+]

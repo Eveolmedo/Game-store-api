@@ -2,24 +2,80 @@
   "info": {
     "name": "Games Database",
     "version": "1.0.0",
-    "total": 1
+    "total": 7
   },
   "games": [
     {
       "id": "1",
-      "titulo": "Final Fantasy X",
-      "categoria": "RPG",
-      "precio": 29.99,
-      "stock": 10,
-      "descripcion": "Un RPG clásico de Square Enix para PlayStation 2."
+      "titulo": "Bully",
+      "categoria": "Acción y aventura",
+      "precio": 19.99,
+      "descripcion": "Vive la experiencia escolar como Jimmy Hopkins, enfrentándote a matones y descubriendo secretos en Bullwort School.",
+      "img": "https://d22fxaf9t8d39k.cloudfront.net/df865f419065741fabcc0536a6e566f07c22a0fcfbf5be471357c084c6b1445444674.jpeg"
     },
     {
       "id": "2",
       "titulo": "God of War",
       "categoria": "Acción",
-      "precio": 45,
-      "stock": 5,
-      "descripcion": "La historia de Kratos en su búsqueda de venganza."
+      "precio": 45.99,
+      "descripcion": "La historia de Kratos en su búsqueda de venganza.",
+      "img": "https://d22fxaf9t8d39k.cloudfront.net/da9254a4cb1d8ce0b803daee18dd2f1eedbb3d3ffa9be2ff4973e3b42899aa8744674.jpg"
+    },
+    {
+      "id": "3",
+      "titulo": "Shadow of the Colossus",
+      "categoria": "Aventura",
+      "precio": 29.99,
+      "descripcion": "Una épica historia de un joven que debe derrotar a 16 colosos para salvar a una chica, explorando un vasto mundo desolado",
+      "img": "https://d22fxaf9t8d39k.cloudfront.net/c4b9040124afe7c23de4bb2ea2c823a2af8e652bc95b31816b4ae626a2a3dc9644674.jpeg"
+    },
+    {
+      "id": "4",
+      "titulo": "Grand Theft Auto: San Andreas",
+      "categoria": "Acción y mundo abierto",
+      "precio": 24.99,
+      "descripcion": "Explora un vasto mundo en este icónico juego donde sigues la historia de CJ en su retorno a Grove Street.",
+      "img": "https://d22fxaf9t8d39k.cloudfront.net/eeb296f8e0cdf8674870fb7c0b36320a75ae2e146b34bd89c2f4756f4632ba5944674.jpeg"
+    },
+    {
+      "id": "5",
+      "titulo": "Silent Hill 4: The Room",
+      "categoria": "Terror y supervivencia",
+      "precio": 21.99,
+      "descripcion": "Atrapado en su propio departamento, Henry Townshend debe resolver un misterio aterrador que conecta mundos oscuros.",
+      "img": "https://d22fxaf9t8d39k.cloudfront.net/6c2f19185be09d974c8415b5ae9556767a44cec4fdddd5fe612a8b784aeda3f844674.jpg"
+    },
+    {
+      "id": "6",
+      "titulo": "Silent Hill 2",
+      "categoria": "Terror y supervivencia",
+      "precio": 19.99,
+      "descripcion": "Sigue a James Sunderland mientras busca respuestas en la niebla de Silent Hill, enfrentando horrores psicológicos.",
+      "img": "https://d22fxaf9t8d39k.cloudfront.net/9cc928fa7d524999d6c27a73f2c89042313e5bd85eb2fc9abafce0d4713fe20444674.jpeg"
+    },
+    {
+      "id": "7",
+      "titulo": "Crash Nitro Kart",
+      "categoria": "Carreras",
+      "precio": 14.99,
+      "descripcion": "Carreras llenas de acción con tus personajes favoritos de Crash Bandicoot, ahora en intensos circuitos y batallas.",
+      "img": "https://d22fxaf9t8d39k.cloudfront.net/15460493beaac870634e2794ab0dc8eab7a62d9636507b8bada53c8f47c2564844674.jpeg"
+    },
+    {
+      "id": "8",
+      "titulo": "Devil May Cry 3: Dante's Awakening",
+      "categoria": "Acción y hack and slash",
+      "precio": 22.99,
+      "descripcion": "Conviértete en Dante, el cazador de demonios, en esta intensa precuela llena de combates épicos y enemigos desafiantes.",
+      "img": "https://d22fxaf9t8d39k.cloudfront.net/ed73bd2ba6bad5e3ac9411bf1cd17dfc1dde078fefe300d06d917737e3e071ce44674.jpeg"
+    },
+    {
+      "id": "9",
+      "titulo": "Resident Evil 4",
+      "categoria": "Terror y acción",
+      "precio": 39.99,
+      "descripcion": "Sigue a Leon S. Kennedy en una misión para rescatar a la hija del presidente enfrentándote a una secta terrorífica.",
+      "img": "https://d22fxaf9t8d39k.cloudfront.net/fc251cba81c4491b9cbdcf9b6440ba6aa5ef4a401a9c0f02541301ebf8bfc8fc44674.jpeg"
     }
   ]
 }
