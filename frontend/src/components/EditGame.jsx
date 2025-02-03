@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { updateGame } from "../services/gameService";
+import { updateGame } from "../services/gameService.jsx";
 
 const EditGame = ({ game, onGameUpdated, onCancel }) => {
   const [editedGame, setEditedGame] = useState({ ...game });

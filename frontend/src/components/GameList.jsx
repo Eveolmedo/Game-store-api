@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { fetchGames } from "../services/gameService";
-import AddGame from "./AddGame";
-import GameItem from "./GameItem";
+import { fetchGames } from "../services/gameService.jsx";
+import AddGame from "./AddGame.jsx";
+import GameItem from "./GameItem.jsx";
 
 const GameList = () => {
   const [games, setGames] = useState([]);

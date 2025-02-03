@@ -1,4 +1,4 @@
-import { deleteGame } from "../services/gameService";
+import { deleteGame } from "../services/gameService.jsx";
 
 const DeleteGame = ({ gameId, onGameDeleted }) => {
   const handleDelete = async () => {

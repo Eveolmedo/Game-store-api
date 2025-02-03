@@ -1,6 +1,6 @@
 import { useState } from "react";
-import EditGame from "./EditGame";
-import DeleteGame from "./DeleteGame";
+import EditGame from "./EditGame.jsx";
+import DeleteGame from "./DeleteGame.jsx";
 
 // Representacion de un solo juego
 const GameItem = ({ game, isAdmin, onGameUpdated, onGameDeleted }) => {
