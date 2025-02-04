@@ -4,7 +4,7 @@ const { login, register } = require('../controllers/authController.js')
 const router = express.Router()
 
 // Endpoint publico para iniciar sesion
-router.post('/', login)
-router.post('/', register)
+router.post('/login', login)
+router.post('/register', register)
 
 module.exports = router

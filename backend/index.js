@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, '../frontend')));
 
 app.use('/api/games', gamesRoutes);
 
-app.use('/api/log', authRoutes);
+app.use('/api', authRoutes);
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));

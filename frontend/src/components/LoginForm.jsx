@@ -8,7 +8,7 @@ const LoginForm = () => {
 
   const handleRegister = async () => {
     try {
-      const response = await fetch(`${API_URL}/api/log`, {
+      const response = await fetch(`${API_URL}/api/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ const LoginForm = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch(`${API_URL}/api/log`, {
+      const response = await fetch(`${API_URL}/api/login`, {
         method: 'POST',
         headers: {'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password }),
