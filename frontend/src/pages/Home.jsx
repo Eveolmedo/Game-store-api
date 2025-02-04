@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import GameList from '../components/GameList.jsx';
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
+import LoginForm from '../components/LoginForm.jsx';
 
 const Home = () => {
   const [userRole, setUserRole] = useState(localStorage.getItem('role') || '');
