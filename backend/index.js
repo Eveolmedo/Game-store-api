@@ -8,13 +8,9 @@ const authRoutes = require('./routes/authRoutes')
 
 const app = express();
 
-const FRONT_URL = process.env.FRONT_URL || "https://game-store-api-peach.vercel.app"
 const PORT = process.env.PORT || 3000;
 
-app.use(cors({
-    origin: FRONT_URL
-}
-));
+app.use(cors());
 app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, '../frontend')));
