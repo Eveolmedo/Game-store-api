@@ -19,12 +19,7 @@ const LoginForm = () => {
       if (!response.ok) {
         throw new Error('Error al registrar usuario');
       }
-
-      const data = await response.json();
-
-      localStorage.setItem('token', data.token);
-      localStorage.setItem('role', data.user.role);
-
+      
       setMessage('✅ Registro exitoso. Ahora puedes iniciar sesión.');
     } catch (error) {
       setMessage('❌ Error al registrar usuario.');

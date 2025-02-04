@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.API_URL || "http://localhost:3000"
+const API_URL = import.meta.env.API_URL || "https://game-store-api-9zl9.onrender.com"
 
 
 // Obtener el token de autenticacion para las peticiones que lo necesitan
