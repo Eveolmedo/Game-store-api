@@ -10,7 +10,12 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
+app.use(cors({
+    origin: ["https://game-store-api-peach.vercel.app"], // Reemplaza con el dominio de tu frontend en Vercel
+    methods: "GET,POST,PUT,DELETE",
+    credentials: true
+}));
+
 app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, '../frontend')));
