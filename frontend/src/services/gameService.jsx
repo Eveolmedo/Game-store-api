@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.API_URL || "https://game-store-api-9zl9.onrender.com"
+const API_URL = "https://game-store-api-9zl9.onrender.com"
 
 
 // Obtener el token de autenticacion para las peticiones que lo necesitan
@@ -15,7 +15,6 @@ export const fetchGames = async () => {
     return [];
   }
 };
-
 
 // Agrega un nuevo juego a la API.
 export const addGame = async (game) => {
